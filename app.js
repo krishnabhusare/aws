@@ -41,6 +41,7 @@ app.get('/expense/get-expense',async(req,res,next)=>{
 })
 
 app.use((req,res,next)=>{
+    console.log('jenkins added');
    
    
     res.sendFile(path.join(__dirname,`public/${req.url}`));
