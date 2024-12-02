@@ -7,12 +7,12 @@ function expense(event){
 
     };
 
-    axios.post('http://localhost:3000/expense/add-expense',expenseDetails);
+    axios.post('http://65.0.75.77:3000/expense/add-expense',expenseDetails);
     showOnScreen(expenseDetails);
 }
 
 window.addEventListener('DOMContentLoaded',()=>{
-    axios.get('http://localhost:3000/expense/get-expense')
+    axios.get('http://65.0.75.77:3000/expense/get-expense')
     .then(result=>{
       
         for(let i=0;i<result.data.allexpenses.length;i++){
